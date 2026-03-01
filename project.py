@@ -13,7 +13,7 @@ except ImportError:
     use_safetensors = False
 
 # Null space ratio - percentage of smallest singular values to keep as null space
-NULL_SPACE_RATIO = 0.10  # Last 5% of singular values
+NULL_SPACE_RATIO = 0.80  # Last 80% of singular values
 
 def compute_and_save_lora_null_space_bases(lora_checkpoint_path, output_basis_file):
     """
